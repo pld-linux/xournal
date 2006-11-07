@@ -1,16 +1,16 @@
-Summary:	Xournal - application for notetaking, sketching, keeping a journal using a stylus.
-Summary(pl):	Xournal - 
+Summary:	Xournal - application for notetaking, sketching, keeping a journal using a stylus
+Summary(pl):	Xournal - aplikacja do tworzenia notatek, szkicowania i prowadzenia dziennika pisakiem
 Name:		xournal
 Version:	0.3.1
 Release:	0.1
 License:	GPL
 Group:		Applications
-Source0:	http://dl.sourceforge.net/sourceforge/xournal/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/xournal/%{name}-%{version}.tar.gz
 # Source0-md5:	5c5077afff8ef41aa296d5b68504f73b
-URL:		http://xournal.sourceforge.net		
+URL:		http://xournal.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2.4
+BuildRequires:	gtk+2-devel >= 2:2.4
 BuildRequires:	libgnomecanvas-devel >= 2.4
 BuildRequires:	libgnomeprint-devel >= 2.2
 BuildRequires:	libgnomeprintui-devel >= 2.2
@@ -22,7 +22,9 @@ using a stylus. It is similar to Microsoft Windows Journal or to other
 alternatives such as Jarnal and Gournal.
 
 %description -l pl
-Xournal
+Xournal to aplikacja do tworzenia notatek, szkicowania i prowadzenia
+dziennika przy u¿yciu pisaka. Jest podobna do Microsoft Windows
+Journal czy innych alternatyw takich jak Jarnal i Gournal.
 
 %prep
 %setup -q
