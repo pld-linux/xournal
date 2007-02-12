@@ -1,5 +1,5 @@
 Summary:	Xournal - application for notetaking, sketching, keeping a journal using a stylus
-Summary(pl):	Xournal - aplikacja do tworzenia notatek, szkicowania i prowadzenia dziennika pisakiem
+Summary(pl.UTF-8):   Xournal - aplikacja do tworzenia notatek, szkicowania i prowadzenia dziennika pisakiem
 Name:		xournal
 Version:	0.3.1
 Release:	0.1
@@ -21,9 +21,9 @@ Xournal is an application for notetaking, sketching, keeping a journal
 using a stylus. It is similar to Microsoft Windows Journal or to other
 alternatives such as Jarnal and Gournal.
 
-%description -l pl
+%description -l pl.UTF-8
 Xournal to aplikacja do tworzenia notatek, szkicowania i prowadzenia
-dziennika przy uøyciu pisaka. Jest podobna do Microsoft Windows
+dziennika przy u≈ºyciu pisaka. Jest podobna do Microsoft Windows
 Journal czy innych alternatyw takich jak Jarnal i Gournal.
 
 %prep
