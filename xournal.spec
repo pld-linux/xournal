@@ -4,17 +4,17 @@ Name:		xournal
 Version:	0.4.1
 Release:	2
 License:	GPL
-Group:		Applications
+Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/xournal/%{name}-%{version}.tar.gz
 # Source0-md5:	b3d352d08e71606383c31da5790b8d60
 URL:		http://xournal.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-Buildrequires:	rpmbuild(macros) >= 1.357
 BuildRequires:	gtk+2-devel >= 2:2.4
 BuildRequires:	libgnomecanvas-devel >= 2.4
 BuildRequires:	libgnomeprint-devel >= 2.2
 BuildRequires:	libgnomeprintui-devel >= 2.2
+Buildrequires:	rpmbuild(macros) >= 1.357
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -47,7 +47,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_desktopdir}
 install %{name}.desktop $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
 install %{name}.glade $RPM_BUILD_ROOT%{_datadir}/%{name}/%{name}.glade
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
