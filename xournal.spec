@@ -2,7 +2,7 @@ Summary:	Xournal - application for notetaking, sketching, keeping a journal usin
 Summary(pl.UTF-8):	Xournal - aplikacja do tworzenia notatek, szkicowania i prowadzenia dziennika pisakiem
 Name:		xournal
 Version:	0.4.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/xournal/%{name}-%{version}.tar.gz
@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/xournal/%{name}-%{version}.tar.gz
 URL:		http://xournal.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
+Buildrequires:	rpmbuild(macros) >= 1.357
 BuildRequires:	gtk+2-devel >= 2:2.4
 BuildRequires:	libgnomecanvas-devel >= 2.4
 BuildRequires:	libgnomeprint-devel >= 2.2
@@ -43,6 +44,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_desktopdir}
+install %{name}.desktop $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -51,3 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
+%{_desktopdir}/%{name}.desktop
