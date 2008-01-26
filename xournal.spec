@@ -46,6 +46,8 @@ rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_desktopdir}
 install %{name}.desktop $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
+install %{name}.glade $RPM_BUILD_ROOT%{_datadir}/%{name}/%{name}.glade
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT
