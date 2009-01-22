@@ -1,12 +1,12 @@
 Summary:	Xournal - application for notetaking, sketching, keeping a journal using a stylus
 Summary(pl.UTF-8):	Xournal - aplikacja do tworzenia notatek, szkicowania i prowadzenia dziennika pisakiem
 Name:		xournal
-Version:	0.4.1
-Release:	2
+Version:	0.4.2.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/xournal/%{name}-%{version}.tar.gz
-# Source0-md5:	b3d352d08e71606383c31da5790b8d60
+# Source0-md5:	b56b1403b68b60a5a27b028d91a38e88
 URL:		http://xournal.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
