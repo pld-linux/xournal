@@ -15,7 +15,7 @@ BuildRequires:	libgnomecanvas-devel >= 2.4
 BuildRequires:	libgnomeprint-devel >= 2.2
 BuildRequires:	libgnomeprintui-devel >= 2.2
 BuildRequires:	pkgconfig
-Buildrequires:	rpmbuild(macros) >= 1.357
+BuildRequires:	rpmbuild(macros) >= 1.357
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
