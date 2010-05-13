@@ -10,9 +10,11 @@ Source0:	http://dl.sourceforge.net/xournal/%{name}-%{version}.tar.gz
 URL:		http://xournal.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2:2.4
 BuildRequires:	libgnomecanvas-devel >= 2.4
 BuildRequires:	pkgconfig
+BuildRequires:	poppler-glib-devel
 BuildRequires:	rpmbuild(macros) >= 1.357
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
