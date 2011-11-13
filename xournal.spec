@@ -2,12 +2,13 @@ Summary:	Xournal - application for notetaking, sketching, keeping a journal usin
 Summary(pl.UTF-8):	Xournal - aplikacja do tworzenia notatek, szkicowania i prowadzenia dziennika pisakiem
 Name:		xournal
 Version:	0.4.5
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications
 Source0:	http://downloads.sourceforge.net/xournal/%{name}-%{version}.tar.gz
 # Source0-md5:	795e4396ded2b67766eb2926be1fb4a9
 Patch0:		%{name}-zlib.patch
+Patch1:		%{name}-poppler-api.patch
 URL:		http://xournal.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -32,6 +33,7 @@ Journal czy innych alternatyw takich jak Jarnal i Gournal.
 %prep
 %setup -q
 %patch0 -p0
+%patch1 -p0
 
 %build
 %{__aclocal}
