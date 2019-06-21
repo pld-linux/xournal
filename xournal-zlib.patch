@@ -1,11 +1,11 @@
 --- configure.in~	2009-10-02 07:42:02.000000000 +0100
 +++ configure.in	2010-07-31 12:02:39.862582539 +0100
-@@ -11,7 +11,7 @@
+@@ -13,7 +13,7 @@
  AC_PROG_RANLIB
  AC_HEADER_STDC
  
--pkg_modules="gtk+-2.0 >= 2.10.0 libgnomecanvas-2.0 >= 2.4.0 poppler-glib >= 0.5.4"
-+pkg_modules="gtk+-2.0 >= 2.10.0 libgnomecanvas-2.0 >= 2.4.0 poppler-glib >= 0.5.4 zlib"
+-pkg_modules="gtk+-2.0 >= 2.10.0 libgnomecanvas-2.0 >= 2.4.0 poppler-glib >= 0.5.4 pangoft2 >= 1.0"
++pkg_modules="gtk+-2.0 >= 2.10.0 libgnomecanvas-2.0 >= 2.4.0 poppler-glib >= 0.5.4 pangoft2 >= 1.0 zlib"
  PKG_CHECK_MODULES(PACKAGE, [$pkg_modules])
  AC_SUBST(PACKAGE_CFLAGS)
  AC_SUBST(PACKAGE_LIBS)
